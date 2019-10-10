@@ -2,6 +2,7 @@
 
 # Example
 # obj
+```
 var a = {
   a: Symbol('111'),
   b: 1,
@@ -24,8 +25,10 @@ var a = {
     g: ['1', '2', '3'],
   }
 }
+```
 
 # checkAll
+```
 var checkAll = function(obj, objb) {
   if (Array.isArray(obj)) {
     obj.forEach(function(e, j) {
@@ -62,6 +65,9 @@ var checkAll = function(obj, objb) {
       }
   }
 }
+```
 # ?equals
+```
 var b = deepCopy(a);
 checkAll(a, b);
+```
