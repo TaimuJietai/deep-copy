@@ -1,13 +1,10 @@
-var deepCopyfun = function(__data) {
-  var __fun;
-  eval('__fun = ' + __data.toString());
-  return __fun;
-}
 var deepCopy = (function() {
   var __deepCopy = function(__data) {
     var __type = typeof __data;
     if (__type === 'function') {
-      return deepCopyfun(__data);
+      var __fun;
+      eval('__fun = ' + __data.toString());
+      return __fun;
     } else if (__type === 'object') {
       if (Object.prototype.toString.call(__data) === '[object Array]') {
         var __array = [];
